@@ -222,6 +222,7 @@ li {
 
 .nav-buttons {
   text-decoration: none;
+  transition: color 0.25s ease;
 }
 
 .nav-buttons:visited {
@@ -391,6 +392,7 @@ footer {
 .linked {
   text-decoration: none;
   color: white;
+  transition: color 0.25s ease;
 }
 
 .linked:visited {
