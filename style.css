@@ -359,11 +359,15 @@ footer {
   margin-right: 10px;
 }
 
-.pres-list-link {
+.linked {
   text-decoration: none;
-  color: white;
+  color: #b6b8bb;
 }
 
-.pres-list-link:visited {
+.linked:visited {
   color: #b6b8bb;
+}
+
+.linked:hover{
+  color: white;
 }
