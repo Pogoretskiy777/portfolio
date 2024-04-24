@@ -545,3 +545,10 @@ input, textarea {
   margin: 10px 20px 10px 20px;
   background-color:#131313;
 }
+
+.music-container {
+  display: flex;
+  height: 800px;
+  flex-direction: row;
+  align-items: center;
+}
