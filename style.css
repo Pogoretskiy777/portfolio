@@ -253,6 +253,10 @@ li {
   color: white;;
 }
 
+.nav-buttons:before {
+  color: white;;
+}
+
 .nav-buttons:hover {
   color: #b6b8bb;;
 }
