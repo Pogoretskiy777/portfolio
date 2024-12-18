@@ -109,6 +109,12 @@ body {
   border-radius: 5px;
 }
 
+.music-released-img {
+  height: 150px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
 .project {
   display: flex;
   padding: 20px 20px 20px 20px;
@@ -623,6 +629,84 @@ input, textarea {
   flex-direction: row;
   justify-content: center;
   background-color: #131313;
+}
+
+.music-released-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  background-color: #1F2937;
+}
+
+.music-released-releases {
+  font-size: 48px;
+}
+
+.music-released {
+  display:flex; 
+  align-items: center;
+  width: 600px;
+  background-color: #283548;
+  border-radius: 8px;
+  border-width: 3px;
+  margin: 0px 0px 20px 0px;
+}
+
+.music-released-info {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.music-released-title {
+  color: white;
+  font-size: 35px;
+  margin: 0px 0px 0px 0px;
+}
+
+.music-released-runtime {
+  font-size: 16px;
+  color: rgb(210, 210, 210);
+  margin: 0px 0px 0px 0px;
+}
+
+.music-released-genre {
+  font-size: 16px;
+  color: rgb(177, 177, 177);
+  margin: 0px 0px 0px 0px;
+}
+
+.music-released-date {
+  font-size: 20px;
+  color: rgb(226, 226, 226);
+  margin: 0px 0px 0px 0px;
+}
+
+.music-released-platforms {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 160px;
+}
+
+.music-released-platforms a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.music-released-platforms a:hover {
+  color:rgb(177, 177, 177);
+  transition: color 0.25s ease;
 }
 
 .music-personal {
