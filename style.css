@@ -589,7 +589,12 @@ input, textarea {
 
 .fa.fa-github {
   font-size: 25px;
+  width: 25px;
+  height: 25px;
   color: white;
+  border-style: solid;
+  border-radius: 14px;
+  
 }
 
 .fa.fa-github:hover {
