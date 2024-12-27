@@ -697,7 +697,6 @@ input, textarea {
 .music-released-platforms {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 40px;
   width: 160px;
 }
@@ -707,6 +706,7 @@ input, textarea {
   font-size: 28px;
   text-decoration: none;
   text-align: center;
+  margin: 0px 10px 0px 0px;
 }
 
 .music-released-platforms a:hover {
