@@ -794,3 +794,75 @@ input, textarea {
   font-size: 20px;
   margin-bottom: 5px;
 }
+
+.inspiration-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.inspiration-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+.inspiration-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  margin: 20px 20px 20px 20px;
+  display: block;
+  backface-visibility: hidden;
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.inspiration {
+  position: relative;
+}
+
+.img-overlay {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.img-overlay-artist {
+  color:white;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+  'Open Sans', 'Helvetica Neue', sans-serif;
+  opacity: 0;
+  margin: 0px 0px 5px 0px;
+  transition: .5s ease;
+}
+
+.img-overlay-genres {
+  font-size: 14px;
+  color: #b6b8bb;
+  font-family: -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+  'Open Sans', 'Helvetica Neue', sans-serif;
+  opacity: 0;
+  transition: .5s ease;
+  padding: 0px 50px 0px 50px;
+}
+
+.inspiration:hover .inspiration-img {
+  opacity: 0.3;
+}
+
+.inspiration:hover .img-overlay-artist {
+  opacity: 1;
+}
+
+.inspiration:hover .img-overlay-genres {
+  opacity: 1;
+}
