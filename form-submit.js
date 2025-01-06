@@ -3,15 +3,24 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault(); // Prevent the default form submission
 
     const formData = new FormData(this); // Get the form data
+    const formObject = {};
+    formData.forEach((value, key) => {
+      formObject[key] = value;
+    });
 
-    fetch(this.action, {
+    console.log("Sending form data:", formObject); // Log the form data to verify
+
+    fetch("http://localhost:3000/submit", {
       method: "POST",
-      body: formData,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formObject),
     })
-      .then((response) => {
-        if (response.ok) {
-          alert("Thank you for your message!"); // Show success message
-          // Optionally, you can reset the form
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.message === "Form submitted successfully!") {
+          alert("Thank you for your message!");
           this.reset();
         } else {
           alert("There was an error submitting your form. Please try again later.");
