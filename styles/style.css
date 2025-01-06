@@ -260,6 +260,7 @@ li {
 }
 
 .nav-buttons {
+  color: white;
   text-decoration: none;
   transition: color 0.25s ease;
 }
