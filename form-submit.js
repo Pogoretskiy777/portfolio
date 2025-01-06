@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Sending form data:", formObject); // Log the form data to verify
 
-    fetch("http://localhost:3000/submit", {
+    fetch("https://pogoretskiy.netlify.app/.netlify/functions/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
